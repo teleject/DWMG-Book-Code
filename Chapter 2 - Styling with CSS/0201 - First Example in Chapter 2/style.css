@@ -1,0 +1,48 @@
+body {
+	background-color: #96b45a;
+	width: 600px;
+	margin: 15px;
+}
+
+p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #000000;
+	text-indent: 10pt;
+}
+
+h1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 36px;
+	color: #ffeebb;
+	letter-spacing: 1px;
+	background-color: #336600;
+	padding: 15px;
+	border: 1px dashed #666600;
+}
+
+h2 {
+	color: #ffeebb;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	text-indent: 5pt;
+}
+
+img {
+	padding: 3px;
+	background-color: #669900;
+	margin:  3px;
+	color: #336600;
+	float: right;
+}
+
+ul {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #000000;
+}
+
+a {
+	color: #003300;
+	text-decoration: underline;
+}

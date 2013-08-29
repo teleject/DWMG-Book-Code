@@ -1,0 +1,7 @@
+ul li:nth-child(3n+3) {
+	background-color: #ccc;
+}
+
+.lt-ie9 third {
+	background-color: #ccc;
+}

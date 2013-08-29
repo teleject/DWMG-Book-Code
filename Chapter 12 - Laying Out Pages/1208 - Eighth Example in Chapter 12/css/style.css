@@ -1,0 +1,23 @@
+h2 {
+	text-align: center;
+}
+div.container {
+	margin: 0 auto;
+	width: 960px;
+}
+div.main {
+	height: 600px;
+	background-color: #0faa01;
+	width: 600px;
+	float: left;
+}
+
+div.aside {
+	height: 600px;
+	background-color: #7c01d9;
+	width: 300px;
+	float: right;
+}
+	
+
+

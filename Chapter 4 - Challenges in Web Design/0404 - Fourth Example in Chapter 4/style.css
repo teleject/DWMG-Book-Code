@@ -1,0 +1,8 @@
+div {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+	background-image: -moz-linear-gradient(top left 90deg, white 0%, black 100%);
+	background-image: -ms-linear-gradient(#fff, #000);
+	background-image: -o-linear-gradient(#fff, #000);
+	background-image: linear-gradient(#fff, #000);
+
+}

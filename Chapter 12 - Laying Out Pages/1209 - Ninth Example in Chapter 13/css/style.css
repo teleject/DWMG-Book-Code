@@ -1,0 +1,22 @@
+h2 {
+	text-align: center;
+}
+@media screen and (min-width: 910px) {
+div.container {
+	margin: 0 auto;
+	width: 100%;
+}
+div.main {
+	background-color: #0faa01;
+	width: 62.5%;
+	float: left;
+}
+
+div.aside {
+	background-color: #7c01d9;
+	width: 31.25%;
+	float: right;
+}
+	
+}
+

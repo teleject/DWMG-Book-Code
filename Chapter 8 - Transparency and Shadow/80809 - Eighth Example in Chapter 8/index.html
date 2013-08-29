@@ -1,0 +1,65 @@
+<html>
+<head>
+	<script src="https://raw.github.com/LeaVerou/prefixfree/gh-pages/prefixfree.min.js"></script>
+	<title>Box Shadow</title>
+	<style>
+	
+	@import url(http://fonts.googleapis.com/css?family=Lato:400,900);
+
+	* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+	html {
+	height: 100%;
+	}
+	
+	figure {
+		 width: 400px; 
+		  margin: 30px auto;
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  margin-left: -200px;
+		  margin-top: -100px;
+		}
+	
+		figcaption {
+			padding-top: 40px;
+		 width: 200px;
+		  float: left;
+		  padding-left: 10px;
+		  font-family: 'Lato', sans-serif;
+		  font-weight: 400;
+		  color: red;
+		  opacity: .8;
+		}
+		strong {
+		  font-family: 'Lato', sans-serif;
+		  font-weight: 900;
+		  display: block;
+		  opacity: 1;
+		}
+	
+	img {
+		width: 200px;
+		float: left;
+		border-radius: 200px;
+		box-shadow: 0 0 20px black,
+		20px 15px 30px rgba(255,255,0,0.8),
+		-20px 15px 30px rgba(0,255,0,0.8),
+		-20px -15px 30px rgba(0,0,255,0.8),
+		20px -15px 30px rgba(255,0,0,0.8);
+	}
+
+
+		
+	</style>
+</head>
+
+<body>
+	  <figure>
+	    <img src="christopher-schmitt.jpg" alt="" />
+	    <figcaption><strong>Christopher Schmitt</strong> is not an astronaut, but likes the helmet anyway.</figcaption>
+	  </figure>
+
+</body>
+</html>

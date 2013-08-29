@@ -1,0 +1,12 @@
+body {
+	text-align: center;
+	line-height: 1.2;
+	color: #333;
+	font-family: "FF Meta Web Pro", Tahoma, Verdana, Arial, sans-serif;
+}
+
+#content {
+	width: 500px;
+	text-align: left;
+	margin: 25px auto;
+}

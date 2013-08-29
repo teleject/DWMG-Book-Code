@@ -1,0 +1,24 @@
+body {
+	background-color: #e0e0e0;
+	color: #000000;
+	margin: 20px;
+	font: .9em/1.5 Helvetica, Arial, sans-serif;
+}
+
+ol {
+	counter-reset: li;
+}
+
+ol > li {
+	list-style: none;
+	position: relative;
+	margin: 0 0 6px 2em;
+	padding: 4px 8px;
+}
+
+ol > li:before {
+	content: counter(li);
+	counter-increment:li;
+	position: absolute;
+	left: -2em;
+}

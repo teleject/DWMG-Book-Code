@@ -1,0 +1,44 @@
+body {
+	font-family: Tahoma, sans-serif;
+	font-weight: bold;
+	font-size: 88px;
+}
+
+div {
+	float: left;
+}
+
+.letter-c {
+	width: 100px;
+	height: 100px;
+	border-radius: 100px;
+	background-color: yellow;
+	color: #797979;
+	opacity: .5;
+	zoom: 1;
+	filter: alpha(opacity=50);
+
+}
+
+.letter-s {
+	width: 100px;
+	height: 100px;
+	border-radius: 100px;
+	background-color: #01219f;
+	color: white;
+	position: relative;
+	left: -20px;
+	z-index: -1;
+}
+
+.letter-c .content {
+	position: relative;
+	top: -5px;
+	left: 18px;
+}
+
+.letter-s .content {
+	position: relative;
+	top: -5px;
+	left: 20px;
+}

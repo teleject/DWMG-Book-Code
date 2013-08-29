@@ -1,0 +1,36 @@
+body {
+	background-color: #f2efea;
+	font-family: Arial, sans-serif;
+	text-shadow: white 0px 2px 0px;
+}
+
+@font-face {
+	font-family: 'Pictos';
+	src: url('fonts/pictos-web.eot?#iefix') format('embedded-opentype');
+	src: url('fonts/pictos-web.woff') format('woff'), 
+	url('fonts/pictos-web.ttf') format('truetype'), 
+	url('fonts/pictos-web.svg#webfontIyfZbseF') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+a {
+	text-decoration: none;
+}
+
+.hidden {
+	position: absolute;
+	top:  -9999px;
+	left: -9999px;
+}
+
+[data-icon]:before {
+	font-family: 'Pictos';
+	content:  attr(data-icon);
+	-webkit-font-smoothing: antialiased;
+	font-weight: normal;
+	font-size: 2em;
+	text-shadow: white 0px 2px 0px;
+	color: red;
+	padding-right: .25em;
+}

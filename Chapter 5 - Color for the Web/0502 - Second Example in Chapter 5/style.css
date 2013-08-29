@@ -1,0 +1,42 @@
+body {
+	font-family: Arial, sans-serif;
+	font-size: .8em;
+	background-color: #f3c3c0;
+	color: #660033;
+}
+
+/* set color for visited links */
+a:visited {
+	color: 003333;
+}
+
+/*set colors for rollover on text links */
+a:link:hover, a:visited:hover {
+	color: #ff0066;
+}
+
+/* set link colors when clicking link */
+a:link:active, a:visited:active {
+	color: purple;
+	/* what's the hexadecimal equivalent of purple? */
+}
+
+header {
+	text-align: center;
+}
+
+h1 {
+	text-transform: uppercase;
+	padding: 30px;
+	border: 10px double #999;
+	font-size: 3em;
+}
+
+img {
+	float: left;
+	padding-right: 10px;
+}
+
+div[role=main] {
+	margin-left: 310px;
+}

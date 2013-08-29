@@ -1,0 +1,10 @@
+body {
+	background-color: #e1cef6;
+	color: #500090;
+}
+#positioned {
+	position: relative;
+	top: 30px;
+	right: 30px;
+	background-color: #eee;
+}

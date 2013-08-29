@@ -1,0 +1,25 @@
+body {
+	font-family: Arial, sans-serif;
+	font-size: .8em;
+}
+
+header {
+	text-align: center;
+}
+
+h1 {
+	text-transform: uppercase;
+	padding: 30px;
+	border: 10px double #999;
+	font-size: 3em;
+
+}
+
+img {
+	float: left;
+	padding-right: 10px;
+}
+
+div[role=main] {
+	margin-left: 310px;
+}

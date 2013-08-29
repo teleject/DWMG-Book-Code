@@ -1,0 +1,19 @@
+body {
+	background-color: #e3befd;
+	color: #3f0091;
+	margin: 20px;
+	font: .9em/1.5 Verdana, Helvetica, sans-serif;
+}
+
+h3 {
+	font-family: Georgia, sans-serif;
+	font-weight: normal;
+}
+
+a {
+	color: #9a0020;
+}
+
+li {
+	margin-bottom: 10px;
+}

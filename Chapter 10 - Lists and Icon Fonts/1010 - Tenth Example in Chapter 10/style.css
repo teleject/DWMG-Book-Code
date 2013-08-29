@@ -1,0 +1,18 @@
+body {
+	background-color: #e0e0e0;
+	color: #000000;
+	margin: 20px;
+	font: .9em/1.5 Helvetica, Arial, sans-serif;
+}
+
+ol > li {
+	list-style-type: upper-roman;
+}
+
+ol > li > ol > li {
+	list-style-type: upper-alpha;
+}
+
+ol > li > ol > li > ol > li {
+	list-style-type: lower-roman;
+}

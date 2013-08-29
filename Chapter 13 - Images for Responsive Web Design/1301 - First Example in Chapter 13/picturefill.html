@@ -1,0 +1,29 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+	 <meta charset="utf-8" />
+		<title>Picturefill</title>
+		<script src="picturefill.js"></script>
+		<script src="external/matchmedia.js"></script>
+	</head>
+	<body>
+
+		<div data-picture data-alt="Kayaking in  front of Sandy Spit, BVI" title="Photo of kayakers in front of Sandy Spit, BVI"> 
+			<div data-srcset="external/imgs/pic-Small-180x111-@1x-72ppi.jpg 1x, external/imgs/pic-Small-360x221-@2x-72ppi.jpg 2x"></div> 
+			<div data-media="(min-width: 25em)" data-srcset="external/imgs/pic-Medium-375x231-@1x-72ppi.jpg 1x, external/imgs/pic-Medium-750x461-@2x-72ppi.jpg 2x"></div>  
+			<div data-media="(min-width: 50em)" data-srcset="external/imgs/pic-Large-480x295-@1x-72ppi.jpg 1x, external/imgs/pic-Large-960x591-@2x-72ppi.jpg 2x"></div>
+			<div data-media="(min-width: 62.5em)" data-srcset="external/imgs/pic-ExtraLarge-768x472-@1x-72ppi.jpg 1x, external/imgs/pic-ExtraLarge-1536x845-@2x-72ppi.jpg 2x"></div>
+
+			<!--[if (lt IE 9) & (!IEMobile)]>
+ 			<div data-src="medium.jpg"></div>
+			<![endif]-->
+
+
+		<!-- Fallback content for non-JS browsers. -->
+		<noscript>
+		<img src="external/imgs/pic-Small-180x111-@1x-72ppi.jpg" alt="Kayaking in  front of Sandy Spit, BVI" />
+		</noscript>
+		</div>
+
+	</body>
+</html>

@@ -1,0 +1,99 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<title>The Need for a Responsive Image Format</title>
+	<meta name="description" content="">
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<style type="text/css">
+		h1 {
+			color: #660033;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Responsive Web Image Format</h1>
+	</header>
+	
+	<img src="lockers.jpg" alt="lockers" width="300px" height="300px" />
+	
+	<div role="main">
+
+		<div class="post">
+
+		<h2>The Need for a Responsive Web Image Format</h2>
+		<h5 class="date">April 4</h5>
+		<p>Images made the first web boom.</p>
+		<p>If it wasn't for <code>IMG</code>, a once non-standard bit of HTML proposed by <a href="http://1997.webhistory.org/www.lists/www-talk.1993q1/0182.html">Marc Andresson</a> and put into the relic Mosiac browser, we probably would still be buying encyclopedias on CD-ROMS today.</p>
+		<p>In that initial proposal, Andresson cited Xbm and Xpm as image formats worth supporting.</p>
+		<p>Thankfully, browsers have adopted more robust image file formats since then.</p>
+		<p>Many formats have indeed come and gone, but there are a few we really deal with most of the time: PNG, GIF and JPEG. </p>
+		<p>But there's now a newcomer.</p>
+		<h2 id="webpimageformat">WebP Image Format</h2>
+		<p>Google announced the creation of a new image format, WebP to join their ranks as standard methods for delivering images on the web.</p>
+		<p>WebP's goal is to surpass compression file sizes of photographs–a role usually reserved by JPEG. But this JPEG clone has a special talent: It animates! </p>
+		<p>So, in essenece, the WebP image format is a merely an evolution of the web graphic, A hybrid of GIF and JPEG file format. </p>
+		<p>As modern browsers expand onto more and more onto mobile devices with high resolution displays, the web doesn't need GIF and JPEG copycats. </p>
+		<h2 id="theproblemwithmobileandimages">The Problem with Mobile and Images</h2>
+		<p>Problems I discussed when I wrote about <a href="http://www.christopherschmitt.com/2012/01/31/adaptive-images-in-responsive-web-design/">the HiSRC jQuery plugin</a> when dealing with a then-hypoethical problem of sending an inline image to an iPad with retina display on a 3G network:</p>
+		<blockquote>
+		<ul>
+		<li>Do you deliver the low-resolution, mobile friendly version?</li>
+		<li>Or do you let the iPad 3 have the larger version, but with the longer download time?</li>
+		</ul>
+		</blockquote>
+		<p>Solutions involve sending a serious amount of JavaScript and speed detection tests to devices to be sure of the network speed. </p>
+		<p>While I think JavaScript solutions like HiSRC are bandaid on a serious issue, I think it's better than any proposed alternative.</p>
+		<h2>More Images, More Markup</h2>
+		<p>There's also an idea of adding another HTML element such as <code>PICTURE</code> as demonstrated in a <a href="https://github.com/scottjehl/picturefill">JavaScript polyfill</a>.</p>
+		<p>Instead of one <code>IMG</code> element, a web builder is expected to construct several additional lines of code at least one additional line for each device and/or resolution they need to support. </p>
+		<p>If <a href="http://gazopablog.blogspot.com/2009/12/how-many-images-on-web.html">Facebook adds 220 million photos per week and flickr 100 million photos per month</a>, those additional lines of code add up quickly. </p>
+		<p>What the web doesn't need isn't more if-else HTML statements. </p>
+		<p>What the web needs is a <em>smarter</em> image format: A responsive image format.</p>
+		<h2 id="responsiveimageformat">Responsive Image Format</h2>
+		<p>The web needs an image format that, when asked by a browser the server would deliver the right image that contains the right resolution. </p>
+		<p>We need an image format that can work in tandem with server and browser to determine the approprirate resolution, pixel </p>
+		<p>The interesting part is there is already an image file format that does just that.</p>
+		<p>It's called <a href="http://en.wikipedia.org/wiki/FlashPix">FlashPix</a>. </p>
+		<p>In a FlashPix file, multiple versions or resolutions of an image are stored in a container.</p>
+		<p>Which image is delivered by a program like a web browser is a determination that can be made by a virtual handshake between the browser and the web server. </p>
+		<h2 id="whyusethismethod">Why Use This Method?</h2>
+		<p>I'm not saying FlashPix is <em>the</em> solution. I am saying a similar approach should be followed. </p>
+		<p>For one, it allows the continued use of the IMG element which is ingrained into the bones, the very marrow, of the Web. </p>
+		<p>Secondly, there's a simple reason why strict coding styles of XHTML was abandoned and loose HTML4 coding practices were instilled into HTML5: <a href="http://dev.opera.com/articles/view/mama-markup-validation-report/">95% of web sites don't validate</a>.</p>
+		<p>Asking web designers, bloggers, and non-techies to create multiple versions of their images in order to appease every Android, iOS device and desktop browser seems not only like a very non-standards approach, it's also not a very practical one.</p>
+		<p>Content producers that work with the web at least a little bit know the fundamental one-to-one aspect when it comes to publishing images on the web: </p>
+		<blockquote>
+		<p><em>One</em> <code>IMG</code> element somewhat coded correctly results in <em>one</em> image showing up in the browser.</p>
+		</blockquote>
+		<p>If we go with a solution born from the kin of <code>VIDEO</code> and <code>AUDIO</code> elements–where we do need to balance differing file supoprt due to the browser venders' turf wars and licensing issues, I believe we surrender a bit of the <a href="http://tantek.com/2010/281/b1/what-is-the-open-web">Open Web</a> mentality for not much gain. </p>
+		<p>Another issue is that with a method for inserting images with additional markup means there needs to be widespread change in WYSIWYG editors, their respetive tool bars in Content Management Systems, updated old web pages.</p>
+		<p>That simply is not going to happen. You will need something on mini-<a href="http://en.wikipedia.org/wiki/Year_2000_problem">Y2K</a> levels to get companies and organizations to start spending that sort of capital to fix the issue. </p>
+		<p>And while I think the retina display is pretty cool, I don't think this issue rises to that level of concern.</p>
+		<h2 id="letdesignersdesign">Let Designers Design</h2>
+		<p>If given a choice, I believe web designers would rather export <em>one</em> piece of artwork from Fireworks, Photoshop or whatever their image editor of choice happens to be and let the software compile multiple resolutions into one container file that can then be stored on a server and referenced via an <code>IMG</code> element in an <code>HTML</code> page.</p>
+		<p><code>IMG</code> got us this far and it hasn't failed us yet.</p>
+		<p>Rather let's look to make image formats work smarter, work better. </p>
+
+													</div>
+	</div>
+
+	<footer>
+
+	</footer>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+	<!-- script src="js/plugins.js"></script -->
+
+<script>
+	var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+	g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+	s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+</body>
+</html>
